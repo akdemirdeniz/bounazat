@@ -15,11 +15,11 @@
   font-family: "Atma";
   font-weight: 400;
   font-display: swap;
-  src: url("../src/Atma-Medium.ttf") format('truetype');
+  src: url(../src/Atma-Medium.ttf) format('truetype');
 }
 
 body {
-    background-image: url("../src/bg.jpg");
+    background-image: url(../src/bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto 100%;
