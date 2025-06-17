@@ -1,0 +1,110 @@
+:root {
+    --yellow: #ffd058
+}
+
+
+
+@font-face {
+  font-family: "Atma";
+  font-weight: 400;
+  font-display: swap;
+  src: url(/src/Atma-Medium.ttf) format('truetype');
+}
+
+body {
+    background-image: url("/src/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.container{
+    height:100vh;
+    width: 100%;
+    position: relative;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 35px 0;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--yellow);
+    font-size: 100%;
+    font-family: "Atma";
+    padding: 5px 2px;
+}
+
+nav ul li a:hover{
+    color:beige;
+}
+
+.content-row{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.left-col, .right-col{
+    flex-basis: 50%;
+}
+
+.left-col{
+    padding: 50px 0;
+}
+
+.search{
+    width: 260px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--yellow);
+    border-radius: 20px;
+}
+
+.search img{
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.search input{
+    width: 100%;
+    outline: none;
+    border: 0;
+    color: #999;
+    background: transparent;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr{
+    width: 160px;
+    height: 4px;
+    background: var(--yellow);
+    margin: 30px 0;
+    border: none;
+}
+h1{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
