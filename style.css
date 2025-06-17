@@ -15,7 +15,7 @@
   font-family: "Atma";
   font-weight: 400;
   font-display: swap;
-  src: url(../src/Atma-Medium.ttf) format('truetype');
+  src: url("../src/Atma-Medium.ttf") format('truetype');
 }
 
 body {
