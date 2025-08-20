@@ -89,7 +89,7 @@ nav ul li a:hover{
 
     .left-col, .right-col {
         flex-basis: auto; /* Reset flex-basis */
-        width: 100%; /* Full width */
+        width: 90%; /* Full width */
         padding: 20px 0; /* Adjust padding for mobile */
     }
 
@@ -108,6 +108,7 @@ nav ul li a:hover{
     nav ul li {
         flex-direction: row;
         white-space: nowrap;
+        font-size: 2.25vw;
         margin-right: 15px; /* Reduce spacing between nav items */
         word-break: keep-all;
     }
