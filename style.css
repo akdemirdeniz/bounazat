@@ -15,11 +15,11 @@
   font-family: "Atma";
   font-weight: 400;
   font-display: swap;
-  src: url(./src/Atma-Medium.ttf) format('truetype');
+  src: url(./assets/Atma-Medium.ttf) format('truetype');
 }
 
 body {
-    background-image: url(./src/bg.jpg);
+    background-image: url(./assets/bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto 100%;
@@ -29,6 +29,23 @@ body {
     height:100vh;
     width: 100%;
     position: relative;
+    text-align: center;
+}
+.paper{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    size: 400%;
+}
+.centered {
+    font-family: "Atma";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    font-size: 1.2vw;
+    min-width: 75%;
 }
 .navbar{
     width: 90%;
@@ -112,48 +129,28 @@ nav ul li a:hover{
         margin-right: 15px; /* Reduce spacing between nav items */
         word-break: keep-all;
     }
+
+    .centered {
+    font-family: "Atma";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    font-size: 3vw;
+    min-width: 75%;
+    }
+
+    .paper{
+        size: 50%;
+    }
 }
 
-/*
-.search{
-    width: 260px;
-    display: flex;
-    align-items: center;
-    padding: 8px 15px;
-    box-sizing: border-box;
-    border: 1px solid var(--yellow);
-    border-radius: 20px;
-}
-
-.search img{
-    height: 24px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.search input{
-    width: 100%;
-    outline: none;
-    border: 0;
-    color: #999;
-    background: transparent;
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-*/
-
-/* Title scaling for larger screens */
 h1 {
     font-size: 200%; /* Base size (mobile) */
     color: #fff;
     letter-spacing: 2px;
     font-family: Verdana, sans-serif;
-}
-
-@media (min-width: 992px) { /* Larger screens */
-    h1 {
-        font-size: 400%; /* Bigger text on desktop */
-    }
 }
 
 /* ===== Mobile Layout ===== */
