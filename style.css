@@ -44,7 +44,7 @@ body {
 }
 
 nav ul li{
-    list-style: none;
+    list-style:disc;
     display: inline-block;
     margin-right: 30px;
 }
@@ -106,10 +106,14 @@ nav ul li a:hover{
         margin: 0; /* Remove default margin */
     }
     nav ul li {
+        flex-direction: row;
+        white-space: nowrap;
         margin-right: 15px; /* Reduce spacing between nav items */
+        word-break: keep-all;
     }
 }
 
+/*
 .search{
     width: 260px;
     display: flex;
@@ -135,6 +139,7 @@ nav ul li a:hover{
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+*/
 
 /* Title scaling for larger screens */
 h1 {
@@ -151,7 +156,7 @@ h1 {
 }
 
 /* ===== Mobile Layout ===== */
-@media (max-width: 768px) {
+@media (max-width: 428px) {
     .content-row {
         flex-direction: column;
     }
@@ -159,7 +164,7 @@ h1 {
         width: 100%;
         padding: 20px 0;
     }
-    /* Ensure Instagram embed doesnâ€™t overflow */
+    /* Ensure Instagram embed doesn't overflow */
     .right-col {
         overflow: hidden; /* Hide any overflow */
     }
