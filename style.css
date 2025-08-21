@@ -20,7 +20,7 @@
 
 body {
     background-image: url(./assets/bg.jpg);
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-position: center center;
     background-size: auto 100%;
 }
@@ -97,14 +97,13 @@ nav ul li a:hover{
     margin: 0 auto; /* Center align */
 }
 
-
 /* Mobile (top to bottom) */
 @media (max-width: 768px) {
     .content-row {
         flex-direction: column; /* Stacks children vertically */
     }
 
-    .left-col, .right-col {
+    .left-col, .right-col{
         flex-basis: auto; /* Reset flex-basis */
         width: 90%; /* Full width */
         padding: 20px 0; /* Adjust padding for mobile */
@@ -158,12 +157,12 @@ h1 {
     .content-row {
         flex-direction: column;
     }
-    .left-col, .right-col {
+    .left-col, .right-col{
         width: 100%;
         padding: 20px 0;
     }
     /* Ensure Instagram embed doesn't overflow */
-    .right-col {
+    .right-col{
         overflow: hidden; /* Hide any overflow */
     }
 }
